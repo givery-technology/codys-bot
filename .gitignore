@@ -1,0 +1,19 @@
+# node directory
+node_modules
+
+# OS Garbage
+.DS_Store*
+Thumb.db
+
+# redis files
+dump.rdb
+
+# backup files
+*~
+.*~
+.*.sw[poq]
+*.bak
+*.orig
+
+# hubot file
+.hubot_history
