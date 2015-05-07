@@ -5,6 +5,7 @@
 #   tanzaku <文章> - 短冊メーカー (15文字以内)
 #   バカ - codyが怒ります
 #   突然の - 死!!!
+#   rock! - let's rock!
 
 eastasianwidth = require 'eastasianwidth'
 
@@ -70,3 +71,5 @@ module.exports = (robot) ->
     return until message.length
     msg.send suddennize message
 
+  robot.respond /(let's )?rocks?!*/, (msg) ->
+    msg.send ":metal::troll::metal:"
