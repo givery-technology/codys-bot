@@ -7,8 +7,8 @@
 
 moment = require 'moment-timezone'
 timezones = {
-  'Tokyo  ': 'Asia/Tokyo'
-  'India  ': 'Asia/Colombo'
+  'Tokyo': 'Asia/Tokyo'
+  'India': 'Asia/Colombo'
   'America': 'America/Kentucky/Monticello'
 }
 
