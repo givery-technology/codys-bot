@@ -15,4 +15,5 @@ timezones = {
 module.exports = (robot) ->
   robot.respond /time/, (msg) ->
     now = new Date().getTime()
-    msg.send (place + ": " + moment(now).tz(tz).format('YYYY-MM-DD HH:mm ZZ')) for place, tz of timezones
+    times = ((place + ": " + moment(now).tz(tz).format('YYYY-MM-DD HH:mm ZZ')) for place, tz of timezones)
+    msg.send times.join("\n")
