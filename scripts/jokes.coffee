@@ -52,6 +52,17 @@ dont_callme_stupid = [
   "shut the F**K!!"
 ]
 
+faces = [
+  "(ツ)"
+  ":smiling_imp:"
+  ":troll:"
+  ":cody:"
+  ":skull:"
+  ":feelsgood:"
+  ":tongue:"
+  ":lips:"
+]
+
 module.exports = (robot) ->
   robot.respond /(stupid|バカ)$/i, (msg) ->
     msg.send msg.random dont_callme_stupid
@@ -73,3 +84,10 @@ module.exports = (robot) ->
 
   robot.respond /(let's )?rocks?!*/, (msg) ->
     msg.send ":metal::troll::metal:"
+
+  robot.respond /shrug/, (msg) ->
+    face = msg.random faces
+    shrug = '¯\\_' + face + '_/¯'
+    msg.send shrug
+
+
