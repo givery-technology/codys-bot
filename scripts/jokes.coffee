@@ -90,4 +90,7 @@ module.exports = (robot) ->
     shrug = '¯\\_' + face + '_/¯'
     msg.send shrug
 
+  robot.respond /oh\s(.*)/, (msg) ->
+    suffix = "'\n￣￣￣￣￣￣￣∨￣￣￣￣￣￣￣￣\n　　 　  ∧_∧:: \n　　　 (´･ω･`):: \n　　 /⌒　　⌒):: \n　　/ へ_＿/ /:: \n　 (＿＼＼ﾐ)/:: \n　　 ｜ `-イ:: \n　　 / ｙ　 ):: \n　    /／　／::\n'"
+    msg.send msg.match[1] + suffix
 
