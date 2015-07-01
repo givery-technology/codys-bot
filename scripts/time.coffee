@@ -7,9 +7,10 @@
 
 moment = require 'moment-timezone'
 timezones = {
-  'Tokyo': 'Asia/Tokyo'
-  'India': 'Asia/Colombo'
+  'Albania': 'Europe/Tirane'
   'America': 'America/Kentucky/Monticello'
+  'India': 'Asia/Colombo'
+  'Tokyo': 'Asia/Tokyo'
 }
 
 module.exports = (robot) ->
