@@ -10,6 +10,7 @@ timezones = {
   'Albania': 'Europe/Tirane'
   'Netherlands': 'Europe/Amsterdam'
   'America': 'America/Kentucky/Monticello'
+  'Canada(Tronto)': 'America/tronto'
   'India': 'Asia/Colombo'
   'Tokyo': 'Asia/Tokyo'
 }
