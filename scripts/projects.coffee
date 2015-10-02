@@ -14,8 +14,8 @@ module.exports = (robot) ->
 
   robot.respond /project code-project/i, (res) ->
     res.send """
-      <#code-project> is the main channel for discussion.
-      <#log-code-project> is notifications from mainly GitHub and CircleCI
+      <@code-project> is the main channel for discussion.
+      <@log-code-project> is notifications from mainly GitHub and CircleCI
       """
 
   robot.respond /project life/i, (res) ->
