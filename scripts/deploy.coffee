@@ -37,7 +37,7 @@ module.exports = (robot) ->
     makePullRequest msg, owner, repo, head, base, environment
 
   robot.respond /deploy whale-server/i, (msg)->
-    makePullRequest msg, "givery-technology", "whale-env", "master", "deployment/production", "production"
+    makePullRequest msg, "givery-technology", "whale-server", "master", "deployment/production", "production"
 
   makePullRequest = (msg, owner, repo, head, base, environment) ->
     body = """
