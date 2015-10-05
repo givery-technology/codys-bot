@@ -36,11 +36,8 @@ module.exports = (robot) ->
     environment = msg.match[7]
     makePullRequest msg, owner, repo, head, base, environment
 
-  robot.respond /deploy docker-all/i, (msg)->
-    makePullRequest msg, "code-check", "docker-all", "master", "deployment/production", "production"
-
-  robot.respond /deploy code-testserver/i, (msg)->
-    makePullRequest msg, "givery-technology", "code-testserver", "master", "deployment/production", "production"
+  robot.respond /deploy whale-server/i, (msg)->
+    makePullRequest msg, "givery-technology", "whale-server", "master", "deployment/production", "production"
 
   makePullRequest = (msg, owner, repo, head, base, environment) ->
     body = """
