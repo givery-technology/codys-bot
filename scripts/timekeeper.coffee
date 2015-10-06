@@ -17,7 +17,7 @@ module.exports = (robot) ->
     robot.messageRoom "#general", "The time is now 18:00 UTC+0900"
   , null, true, 'Asia/Tokyo').start()
   new cron('0 30 18 * * 1-5', () ->
-    robot.messageRoom "#general", "Time for Garbage Collection!! 18:30 UTC+0900"
+    robot.messageRoom "#general", "Time for Garbage Collection!! 18:30 UTC+0900\n* collect garbage from all dust box\n* check wastepaper in shredders\n* DO NOT forget to check garbage in the kitchen"
   , null, true, 'Asia/Tokyo').start()
   new cron('0 0 11 28 * *', () ->
     robot.messageRoom "#general", "@everyone Transportation feeeeeee!!!! https://www.cloud-timecard.jp/web/XjJ465E3/login"
