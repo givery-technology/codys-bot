@@ -7,10 +7,10 @@
 
 moment = require 'moment-timezone'
 timezones = {
-  'Albania': 'Europe/Tirane'
-  'Netherlands': 'Europe/Amsterdam'
   'America': 'America/Kentucky/Monticello'
   'Canada(Toronto)': 'America/Toronto'
+  'Albania': 'Europe/Tirane'
+  'Netherlands': 'Europe/Amsterdam'
   'India': 'Asia/Colombo'
   'Philippines': 'Asia/Manila'
   'Tokyo': 'Asia/Tokyo'
