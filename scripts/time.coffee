@@ -12,6 +12,7 @@ timezones = {
   'America': 'America/Kentucky/Monticello'
   'Canada(Toronto)': 'America/Toronto'
   'India': 'Asia/Colombo'
+  'Philippines': 'Asia/Manila'
   'Tokyo': 'Asia/Tokyo'
 }
 
