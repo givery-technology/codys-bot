@@ -6,7 +6,7 @@
 
 request = require 'request'
 
-TAK = '![LGTM](http://i.imgur.com/8OZoJIx.gif)'
+TAK = 'Looks Tak To Me :troll:\nhttp://i.imgur.com/8OZoJIx.gif'
 options = {
   url: 'http://www.lgtm.in/g'
   method: 'GET'
