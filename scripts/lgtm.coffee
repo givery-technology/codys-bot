@@ -7,11 +7,11 @@
 request = require 'request'
 
 TAK = 'Looks Tak To Me :troll:\nhttp://i.imgur.com/8OZoJIx.gif'
-options = {
+options =
   url: 'http://www.lgtm.in/g'
   method: 'GET'
   json: true
-}
+
 module.exports = (robot) ->
   robot.respond /lgtm *(tak)?$/i, (msg) ->
     request options, (error, response, json) ->
