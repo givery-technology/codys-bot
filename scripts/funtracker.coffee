@@ -1,11 +1,11 @@
+# Description:
+#   Keeps track if we are having too much fun with cody and tells them to go back to work.
+#
+
 # Settings
 BOREDOM_INTERVAL = 60 * 60 * 1000               # Time it takes for a fun to become unfun
 TOO_MUCH_FUN_THRESHOLD = 5                      # Funs before cody becomes tired
 WAY_TOO_MUCH_FUN_THRESHOLD = 25                 # Funs before cody becomes pissed off
-
-# Description:
-#   Keeps track if we are having too much fun with cody and tells them to go back to work.
-#
 
 # Collector for fun records
 fun_records = []

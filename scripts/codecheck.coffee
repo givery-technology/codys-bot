@@ -1,3 +1,6 @@
+# Description:
+#   Dummy testing commands
+#
 module.exports = (robot) ->
   robot.respond /deploy ping/, (msg) ->
     msg.send "PONG"
