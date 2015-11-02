@@ -20,6 +20,6 @@ module.exports = (robot) ->
       else if error
         lgtm = "Sorry, something wrong happend :troll:"
       else
-        lgtm = "`LGTM!!\n#{json.imageUrl}"
+        lgtm = "LGTM!!\n#{json.imageUrl}"
       msg.send lgtm
 
