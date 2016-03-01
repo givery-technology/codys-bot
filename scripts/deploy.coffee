@@ -28,6 +28,13 @@ module.exports = (robot) ->
       dd = "0" + dd
     yyyy + "." + mm + "." + dd
 
+  robot.respond /infrastructure ([-_\.0-9a-zA-Z]+)(\/([-_\.a-zA-z0-9\/]+))(\/([-_\.a-zA-z0-9\/]+)) into (deployment\/([-_\.a-zA-z0-9\/]+))$/i, (msg)->
+    endpoint = process.env.HUBOT_INFRASTRUCTURE_ENDPOINT
+    apiKey = process.env.HUBOT_INFRASTRUCTURE_API_KEY
+    data = JSON.stringify(msg)
+    robot.http(endpoint).header('x-api-key', apiKey).header('Content-Type', 'application/json').post(data) (err, res, body) ->
+      msg.send body
+
   robot.respond /deploy ([-_\.0-9a-zA-Z]+)(\/([-_\.a-zA-z0-9\/]+))(\/([-_\.a-zA-z0-9\/]+)) into (deployment\/([-_\.a-zA-z0-9\/]+))$/i, (msg)->
     owner = msg.match[1]
     repo = msg.match[3]
