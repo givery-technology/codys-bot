@@ -2,7 +2,7 @@
 #   Convenient utilities.
 #
 # Commands:
-#   placehold 
+#   placehold <width>x<height> - Link to placehold.it
 #
 
 module.exports = (robot) ->
