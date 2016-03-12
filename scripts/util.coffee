@@ -2,8 +2,8 @@
 #   Convenient utilities.
 #
 # Commands:
-#   placehold <width> <height> - Link to placehold.it
-#   <width>x<height>
+#   hubot placehold <width> <height> - Link to placehold.it
+#   hubot <width>x<height>
 #
 
 placeholdit = (width, height) ->
