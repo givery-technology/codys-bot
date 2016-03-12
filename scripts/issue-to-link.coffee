@@ -3,6 +3,7 @@
 #
 # Commands:
 #   <user>/<repo>#<num> - Link to github issue link
+#   hubot issue <repo>#<num> - Assume that user is givery-technology
 #
 
 mklink = (user, repo, issue) ->
