@@ -1,16 +1,12 @@
-# ========================================================
-#
-# This bot is slack hubot in Givery, inc
-# botname : cody
-# Made by : da0shi
 # Description:
 #   Show you projects and related channels
 #
-# ========================================================
+# Commands
+#   hubot projects
 
 module.exports = (robot) ->
   robot.respond /projects/i, (res) ->
-    res.send "We now have <#code-project> and <#life>"
+    res.send "We now have #code-project and #life"
 
   robot.respond /project code-project/i, (res) ->
     res.send """

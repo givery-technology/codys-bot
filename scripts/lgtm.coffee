@@ -2,7 +2,7 @@
 #   LGTM :troll:
 #
 # Commands:
-#   cody lgtm
+#   hubot lgtm
 
 request = require 'request'
 
@@ -22,4 +22,3 @@ module.exports = (robot) ->
       else
         lgtm = "LGTM!!\n#{json.imageUrl}"
       msg.send lgtm
-
