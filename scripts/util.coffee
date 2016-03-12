@@ -11,7 +11,7 @@ placeholdit = (width, height) ->
 
 module.exports = (robot) ->
 
-  robot.respond /placehold (\d{1,})[x ](\d{1,})/i, (msg) ->
+  robot.respond /(placehold|ph) (\d{1,})[x ](\d{1,})/i, (msg) ->
     width = msg.match[1]
     height = msg.match[2]
     msg.send placeholdit(width, height)
