@@ -16,6 +16,7 @@ timezones = {
 #  'India': 'Asia/Colombo'
 #  'Philippines': 'Asia/Manila'
   'Tokyo': 'Asia/Tokyo'
+  'Vietnam': 'Asia/Ho_Chi_Minh'
 }
 
 module.exports = (robot) ->
