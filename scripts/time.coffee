@@ -12,7 +12,7 @@ timezones = {
 #  'Canada(Toronto)': 'America/Toronto'
 #  'Albania': 'Europe/Tirane'
   'Netherland': 'Europe/Amsterdam'
-  'Taiwan': 'Asia/Taipei'
+  'Taipei': 'Asia/Taipei'
 #  'India': 'Asia/Colombo'
 #  'Philippines': 'Asia/Manila'
   'Tokyo': 'Asia/Tokyo'
