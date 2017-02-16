@@ -22,6 +22,3 @@ module.exports = (robot) ->
   new cron('0 0 11 28 * *', () ->
     robot.messageRoom "#general", "@everyone Transportation feeeeeee!!!! https://www.cloud-timecard.jp/web/XjJ465E3/login"
   , null, true, 'Asia/Tokyo').start()
-  new cron('0 45 15 * * 1-5', () ->
-    robot.messageRoom "#yurubo-lunch", "@here :coffee: around 16:00? I'm ok with either of 7-11, About Life, or any other place :)"
-  , null, true, 'Asia/Tokyo').start()
