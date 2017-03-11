@@ -4,6 +4,9 @@
   "private": true,
   "author": "Givery Technology <technology@givery.co.jp>",
   "description": "A simple helpful bot for Givery Technology",
+  "scripts": {
+    "start": "./bin/hubot"
+  },
   "dependencies": {
     "cron": "^1.0.4",
     "eastasianwidth": "^0.1.0",
