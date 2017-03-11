@@ -10,7 +10,7 @@ mklink = (user, repo, issnum) ->
   return "https://github.com/#{user}/#{repo}/issues/#{issnum}"
 
 module.exports = (robot) ->
-  robot.hear /(\S+?)\/(\S+?)#(\d+)/, (msg) ->
+  robot.hear /([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)#(\d+)/, (msg) ->
     user = msg.match[1]
     repo = msg.match[2]
     issnum = msg.match[3]
