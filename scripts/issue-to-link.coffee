@@ -14,9 +14,9 @@ mklink = (user, repo, issnum, type = "i") ->
 
 module.exports = (robot) ->
   robot.hear /(?:^|\s)([a-zA-Z0-9-]+)\/([a-zA-Z0-9-]+)#(\d+)/i, (msg) ->
-    user = msg.match[1]
-    repo = msg.match[2]
-    issnum = msg.match[3]
+    user = msg.match[1].toLowerCase()
+    repo = msg.match[2].toLowerCase()
+    issnum = msg.match[3].toLowerCase()
     msg.send mklink(user,repo, issnum)
 
   robot.hear /(?:^|\s)(issues?|pr|pull request) ([^\/\s]+)#(\d+)/i, (msg) ->
