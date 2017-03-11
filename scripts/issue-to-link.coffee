@@ -6,17 +6,17 @@
 #   hubot issue <repo>#<num> - Assume that user is givery-technology
 #
 
-mklink = (user, repo, issue) ->
-  return "https://github.com/#{user}/#{repo}/issues/#{issue}"
+mklink = (user, repo, issnum) ->
+  return "https://github.com/#{user}/#{repo}/issues/#{issnum}"
 
 module.exports = (robot) ->
   robot.hear /(\S+?)\/(\S+?)#(\d+)/, (msg) ->
     user = msg.match[1]
     repo = msg.match[2]
-    issue = msg.match[3]
-    msg.send mklink(user,repo, issue)
+    issnum = msg.match[3]
+    msg.send mklink(user,repo, issnum)
 
   robot.respond /issue ([^\/\s]+)#(\d+)/i, (msg) ->
     repo = msg.match[1]
-    issue = msg.match[2]
-    msg.send mklink("givery-technology", repo, issue)
+    issnum = msg.match[2]
+    msg.send mklink("givery-technology", repo, issnum)
