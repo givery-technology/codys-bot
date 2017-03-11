@@ -16,7 +16,7 @@ module.exports = (robot) ->
     issnum = msg.match[3]
     msg.send mklink(user,repo, issnum)
 
-  robot.respond /issue ([^\/\s]+)#(\d+)/i, (msg) ->
+  robot.hear /issue ([^\/\s]+)#(\d+)/i, (msg) ->
     repo = msg.match[1]
     issnum = msg.match[2]
     msg.send mklink("givery-technology", repo, issnum)
