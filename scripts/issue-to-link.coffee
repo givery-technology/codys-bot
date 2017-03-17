@@ -9,7 +9,7 @@
 # i for issue
 # p for pull request
 mklink = (user, repo, issnum, type = "i") ->
-  t = if type == "i" then "issues" else "pulls"
+  t = if type == "i" then "issues" else "pull"
   return "https://github.com/#{user}/#{repo}/#{t}/#{issnum}"
 
 module.exports = (robot) ->
@@ -19,7 +19,7 @@ module.exports = (robot) ->
     issnum = msg.match[3].toLowerCase()
     msg.send mklink(user,repo, issnum)
 
-  robot.hear /(?:^|\s)(issues?|pr|pull request) ([^\/\s]+)#(\d+)/i, (msg) ->
+  robot.hear /(?:^|\s)(issues?|pulls?|pr|pull request) ([^\/\s]+)#(\d+)/i, (msg) ->
     type = if msg.match[1] == "issue" then "i" else "p"
     repo = msg.match[2].toLowerCase()
     issnum = msg.match[3].toLowerCase()
