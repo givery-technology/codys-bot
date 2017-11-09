@@ -8,7 +8,7 @@ cron = require("cron").CronJob
 
 module.exports = (robot) ->
   new cron("0 0 10 * * 1-5", () ->
-    robot.messageRoom "#givery-technology", "Guys, let's scrum.\nIt's 11:00 JST"
+    robot.messageRoom "#givery-technology", "Guys, let's scrum.\nIt's 10:00 JST"
   , null, true, "Asia/Tokyo").start()
   new cron("0 0 12 * * 1-5", () ->
     robot.messageRoom "#givery-technology", "12:00 JST! It's time to think about today's lunch menu~ :hamburger: :ramen: :taco: :sushi: :pizza: :curry: #yurubo-lunch"
