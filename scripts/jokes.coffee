@@ -22,12 +22,12 @@ tanzakunize = (string) ->
   tanzaku = [
     "```"
     "┏┷┓"
-    "┃　┃"
+    "┃  ┃"
   ]
   for value in string.toArray()
     tanzaku.push "┃#{value}┃"
 
-  tanzaku.push "┃　┃"
+  tanzaku.push "┃  ┃"
   tanzaku.push "┗━┛"
   tanzaku.push "```"
 
@@ -39,7 +39,7 @@ suddennize = (string) ->
     "```"
     "＿#{'人'.connect length + 2}＿"
     "＞　#{string}　＜"
-    "￣Y#{'^Y'.connect length}￣"
+    " ￣Y#{'^Y'.connect length}￣"
     "```"
   ]
 
