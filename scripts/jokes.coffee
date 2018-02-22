@@ -20,6 +20,7 @@ String::toArray = ->
 
 tanzakunize = (string) ->
   tanzaku = [
+    "```"
     "┏┷┓"
     "┃　┃"
   ]
@@ -28,15 +29,18 @@ tanzakunize = (string) ->
 
   tanzaku.push "┃　┃"
   tanzaku.push "┗━┛"
+  tanzaku.push "```"
 
   tanzaku.join "\n"
 
 suddennize = (string) ->
   length = Math.floor eastasianwidth.length(string) / 2
   sudden = [
+    "```"
     "＿#{'人'.connect length + 2}＿"
     "＞　#{string}　＜"
     "￣Y#{'^Y'.connect length}￣"
+    "```"
   ]
 
   sudden.join "\n"
