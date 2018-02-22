@@ -17,7 +17,7 @@
     "hubot-google-images": "^0.1.4",
     "hubot-google-translate": "^0.1.0",
     "hubot-help": "^0.1.1",
-    "hubot-heroku-keepalive": "0.0.4",
+    "hubot-heroku-keepalive": "^1.0.3",
     "hubot-maps": "0.0.2",
     "hubot-pugme": "^0.1.0",
     "hubot-redis-brain": "0.0.2",
@@ -26,7 +26,7 @@
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.3.0",
     "hubot-slack-timeline": "^0.2.2",
-    "hubot-youtube": "^0.1.2",
+    "hubot-youtube": "^1.1.0",
     "moment": "^2.10.2",
     "moment-timezone": "^0.3.1",
     "request": "^2.65.0"
