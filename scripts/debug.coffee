@@ -4,7 +4,7 @@
 
 module.exports = (robot) -> 
   robot.respond /debug/, (res) -> 
-    robot.logger.debug Object.keys(res)
-    robot.logger.debug res.message
+    robot.logger.info Object.keys(res)
+    robot.logger.info res.message
     res.send "Yup, I dump the logs. Take a look into it."
 
