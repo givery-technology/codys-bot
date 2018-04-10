@@ -11,4 +11,4 @@ module.exports = (robot) ->
     unless channels.includes res.message.room
       return
 
-    res.send "@channel :name_badge: It seems we are facing an **INCIDENT**. Act fast!! :name_badge:"
+    res.send "@channel :name_badge: It seems we are facing an *INCIDENT*. Act fast!! :name_badge:"
