@@ -20,5 +20,5 @@ module.exports = (robot) ->
     robot.messageRoom "#givery-technology", "@channel Time for Garbage Collection!! 18:30 JST\n* collect garbage from all dust box\n* check wastepaper in shredders\n* DO NOT forget to check garbage in the kitchen"
   , null, true, "Asia/Tokyo").start()
   new cron("0 10 11 1 * *", () ->
-    robot.messageRoom "#givery-technology", "@channel Please apply your transportation feeeeeeeee!!\nfrom  https://www.cloud-timecard.jp/web/XjJ465E3/login"
+    robot.messageRoom "#givery-technology", "@channel Please apply your transportation feeeeeeeee!!\nfrom  https://ic.next-cloud.jp/web/XjJ465E3/login"
   , null, true, "Asia/Tokyo").start()
