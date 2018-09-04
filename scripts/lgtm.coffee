@@ -17,7 +17,7 @@ module.exports = (robot) ->
     request options, (error, response, json) ->
       if msg.match[1]
         lgtm = TAK
-      else if error or response !== 200
+      else if error or response != 200
         lgtm = "Sorry, something wrong happend :troll:"
       else
         lgtm = "LGTM!!\n#{json.imageUrl}"
