@@ -1,6 +1,6 @@
 {
   "name": "cody",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "author": "Givery Technology <technology@givery.co.jp>",
   "description": "A simple helpful bot for Givery Technology",
@@ -8,7 +8,7 @@
     "start": "./bin/hubot"
   },
   "dependencies": {
-    "cron": "^1.0.4",
+    "cron": "^1.4.1",
     "eastasianwidth": "^0.2.0",
     "githubot": "^1.0.0",
     "hubot": "^3.1.1",
@@ -24,7 +24,7 @@
     "hubot-rules": "^0.1.0 || ~0",
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.2.0 || ~0",
-    "hubot-slack": "^3.3.0",
+    "hubot-slack": "^4.5.4",
     "hubot-slack-timeline": "^0.2.3 || ~0",
     "hubot-youtube": "^1.1.0",
     "moment": "^2.22.2",
