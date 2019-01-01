@@ -8,7 +8,7 @@
     "start": "./bin/hubot"
   },
   "dependencies": {
-    "cron": "^1.0.4",
+    "cron": "^1.6.0",
     "eastasianwidth": "^0.2.0",
     "githubot": "^1.0.0",
     "hubot": "^3.1.1",
@@ -27,8 +27,8 @@
     "hubot-slack": "^3.3.0",
     "hubot-slack-timeline": "^0.2.3 || ~0",
     "hubot-youtube": "^1.1.0",
-    "moment": "^2.22.2",
-    "moment-timezone": "^0.5.20",
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.23",
     "request": "^2.87.0"
   },
   "engines": {
